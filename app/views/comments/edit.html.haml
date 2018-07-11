@@ -1,7 +1,9 @@
-%h1 Edit Comment 
+#post_content
+    #post_method
+        %h1 Edit Comment 
 
-= simple_form_for([@post, @comment]) do |f|
-    = f.input :comment
-    = f.submit
+        = simple_form_for([@post, @comment]) do |f|
+            = f.input :comment
+            = f.submit
 
-= link_to "cancel", post_path(@post)
+        = link_to "cancel", post_path(@post)
